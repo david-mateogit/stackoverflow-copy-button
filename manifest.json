@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Stack Overflow Copy Button",
+  "description": "Adds a copy button to Stack Overflow answers.",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "files_by_Freepik.png",
+    "48": "files_by_Freepik.png",
+    "128": "files_by_Freepik.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://stackoverflow.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
